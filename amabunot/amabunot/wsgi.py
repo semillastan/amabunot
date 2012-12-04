@@ -1,5 +1,5 @@
 """
-WSGI config for amabunot project.
+WSGI config for hris project.
 
 This module contains the WSGI application used by Django's development server
 and any production WSGI deployments. It should expose a module-level variable
@@ -14,8 +14,14 @@ framework.
 
 """
 import os
+import sys
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "amabunot.settings")
+# activate virtualenv
+activate_this = os.path.expanduser("/var/www/itdc/env/bin/activate_this.py")
+execfile(activate_this, dict(__file__=activate_this))
+
+sys.path = ['/var/www/itdc/env','/var/www/itdc/env/www','/var/www/itdc/env/www/hris/', '/var/www/itdc/env/www/hris/hris'] + sys.path
+os.environ['DJANGO_SETTINGS_MODULE'] = 'hris.settings'
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION

@@ -1,0 +1,67 @@
+.user-profile {
+    width: 780px;
+    min-height: 100px;
+}
+
+.user-profile .info {
+    width: 780px;
+    min-height: 25px;
+    line-height: 25px;
+    margin-bottom: 2px;
+}
+
+.user-profile .info span.label {
+    display: block;
+    width: 780px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.user-profile .info span.entry {
+    display: block;
+    width: 780px;
+    height: 35px;
+    font-size: 35px;
+    font-family: SegoeL;
+    margin-bottom: 2px;
+    color: #141414;
+}
+
+.user-profile form {
+    width: 780px;
+    min-height: 100px;
+}
+
+.user-profile form .info {
+    width: 780px;
+    min-height: 10px;
+    margin-bottom: 2px;
+    float: left;   
+}
+
+.user-profile form .info div input[type="text"]{
+    width: 758px;
+    height: 30px;
+    font-size: 25px;
+    font-family: SegoeL;
+    line-height: 30px;
+    padding-left: 5px;
+    border: 1px solid #dedede;
+}
+
+.user-profile form .info div.half input[type="text"] {
+    width: 370px;
+    float: left;
+    margin-right: 10px;
+}
+
+.user-profile form .info div select {
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #dedede;
+    font-size: 25px;
+    font-family: SegoeL;
+}
